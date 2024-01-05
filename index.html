@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coolest Restaurant</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header {
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/noodles-with-beef-vegetables-black-table_141793-1729.jpg?size=626&ext=jpg') center/cover no-repeat;
+    position: relative;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    padding: 20px 100px;
+  }
+
+  .navigation img {
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation li {
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .navigation li:hover {
+    border-bottom: 2px solid yellow;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    position: relative;
+    z-index: 10;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    color: white;
+    margin: 0;
+  }
+
+  .content p {
+    color: white;
+    margin: 20px 0 40px;
+  }
+
+  .content button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .content button:hover {
+    background-color: red;
+    transform: scale(1.1);
+  }
+
+  .offers {
+    background: url('https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg?size=626&ext=jpg') center/cover fixed no-repeat;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .offers .title h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .offers .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .offer-item {
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+  }
+
+  .offer-item:hover {
+    transform: scale(1.1);
+  }
+
+  .offer-item img {
+    width: 100%;
+  }
+
+  .offer-item h3 {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+
+  .offer-item p {
+    font-size: 14px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+  }
+
+  .menu {
+    background: white;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .menu .title h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .menu-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .menu-item:hover {
+    transform: scale(1.1);
+  }
+
+  .menu-item .primary-text {
+    font-weight: bold;
+  }
+
+  .contact-form {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  .contact-form button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <nav class="navigation">
+    <img src="https://img.freepik.com/free-photo/3d-view-letters-alphabet_23-2150499103.jpg?size=626&ext=jpg" alt="The Cool Restaurant Logo">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Menu</li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h1>Welcome to the COOLEST Restaurant</h1>
+    <p>Just be cool!</p>
+    <button>Book a table Now</button>
+  </div>
+</header>
+
+<section class="offers">
+  <div class="title">
+    <h2>Our Special Offers</h2>
+  </div>
+  <div class="container">
+    <div class="offer-item">
+      <img src="https://img.freepik.com/free-photo/bowl-noodle-trivet-tomatoes-lemon-garlic-marble-surface_114579-91260.jpg?size=626&ext=jpg" alt="Ramen Dish">
+      <h3>Ramen Dish</h3>
+      <p>$150</p>
+    </div>
+    <div class="offer-item">
+      <img src="https://img.freepik.com/free-photo/spaghetti-with-chicken-tomato-sauce-side-view_141793-4525.jpg?size=626&ext=jpg" alt="Noodles">
+      <h3>Noodles</h3>
+      <p>$100</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <div class="title">
+    <h2>Our Special Menu</h2>
+  </div>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="https://img.freepik.com/free-photo/imeretian-khachapuri-cheese-lemon-side-view_140725-11276.jpg?size=626&ext=jpg" alt="Pizza with Cheese">
+      <span class="primary-text">Pizza with Cheese - $50</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://img.freepik.com/free-photo/salad-from-tomatoes-cucumber-red-onions-lettuce-leaves-healthy-summer-vitamin-menu-vegan-vegetable-food-vegetarian-dinner-table-top-view-flat-lay_2829-6482.jpg?size=626&ext=jpg" alt="Taboola">
+      <span class="primary-text">Taboola - $10</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://img.freepik.com/free-photo/front-view-chocolate-dessert-glass-with-straw_23-2148603311.jpg?size=626&ext=jpg" alt="Milkshake">
+      <span class="primary-text">Milkshake - $50</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://img.freepik.com/free-photo/delicious-meat-sandwich-with-tomatoes-green-dark-surface-close-up-shot_179666-42483.jpg?size=626&ext=jpg" alt="Cheese Burger">
+      <span class="primary-text">Cheese Burger - $50</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact-form">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+</body>
+</html>
